@@ -21,16 +21,7 @@ set_property PACKAGE_PIN J5 [get_ports ledr_n]
 set_property IOSTANDARD LVCMOS33 [get_ports ledr_n]
 set_property PACKAGE_PIN T9 [get_ports ledg_n]
 set_property IOSTANDARD LVCMOS33 [get_ports ledg_n]
-#set_property PACKAGE_PIN T10 [get_ports {out_byte[7]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {out_byte[7]}]
 
-# BUTON 0
-#set_property PACKAGE_PIN D9 [get_ports resetk]
-#set_property IOSTANDARD LVCMOS33 [get_ports resetk]
-#set_property PACKAGE_PIN F6 [get_ports {trap}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {trap}]
-#set_property PACKAGE_PIN J4 [get_ports {out_byte_en}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {out_byte_en}]
 
 ## USB-UART Interface
 set_property PACKAGE_PIN D10 [get_ports ser_rx]
@@ -72,6 +63,6 @@ set_property CFGBVS VCCO [current_design]
 
 set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
 set_property BITSTREAM.CONFIG.CONFIGRATE 33 [current_design]
-#set_property CONFIG_MODE SPIx4 [current_design]
+
 
 
