@@ -6,7 +6,7 @@ set_property PACKAGE_PIN E3 [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports clk]
 create_clock -period 62.500 [get_ports clk]
 
-# Pmod Header JA (JA0..JA7)
+# User LEDS
 set_property PACKAGE_PIN E1 [get_ports led1]
 set_property IOSTANDARD LVCMOS33 [get_ports led1]
 set_property PACKAGE_PIN G4 [get_ports led2]
@@ -44,15 +44,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports flash_io3]
 
 set_property PACKAGE_PIN L16 [get_ports flash_clk]
 set_property IOSTANDARD LVCMOS33 [get_ports flash_clk]
-
-
-## Quad SPI Flash
-#set_property -dict { PACKAGE_PIN L13   IOSTANDARD LVCMOS33 } [get_ports { qspi_cs }]; #IO_L6P_T0_FCS_B_14 Sch=qspi_cs
-#set_property -dict { PACKAGE_PIN K17   IOSTANDARD LVCMOS33 } [get_ports { qspi_dq[0] }]; #IO_L1P_T0_D00_MOSI_14 Sch=qspi_dq[0]
-#set_property -dict { PACKAGE_PIN K18   IOSTANDARD LVCMOS33 } [get_ports { qspi_dq[1] }]; #IO_L1N_T0_D01_DIN_14 Sch=qspi_dq[1]
-#set_property -dict { PACKAGE_PIN L14   IOSTANDARD LVCMOS33 } [get_ports { qspi_dq[2] }]; #IO_L2P_T0_D02_14 Sch=qspi_dq[2]
-#set_property -dict { PACKAGE_PIN M14   IOSTANDARD LVCMOS33 } [get_ports { qspi_dq[3] }]; #IO_L2N_T0_D03_14 Sch=qspi_dq[3]
-
 
 set_property CONFIG_VOLTAGE 3.3 [current_design]
 #where value2 is the voltage provided to configuration bank 0
